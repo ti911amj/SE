@@ -1,0 +1,483 @@
+2025.03.21 12:00:25 INFO  Started: Metals version 1.5.1 in folders 'C:\HTWG_Module\Software engeneering' for client Visual Studio Code 1.98.2.
+2025.03.21 12:00:27 WARN  no build tool detected in workspace 'C:\HTWG_Module\Software engeneering'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2025.03.21 12:00:27 WARN  Build server is not auto-connectable.
+März 21, 2025 12:00:36 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 21, 2025 12:05:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+2025.03.21 12:06:08 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:08 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:28 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:28 WARN  Error requesting Scala script import
+java.nio.file.InvalidPathException: Illegal char <"> at index 61: C:\Users\tiemo\AppData\Local\Programs\Python\Python39\Scripts"
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.nio.file.Path.of(Path.java:147)
+	at java.nio.file.Paths.get(Paths.java:69)
+	at scala.meta.internal.metals.scalacli.ScalaCli$.$anonfun$localScalaCli$4(ScalaCli.scala:350)
+	at scala.collection.Iterator$$anon$9.next(Iterator.scala:584)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:478)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:600)
+	at scala.collection.immutable.Stream$.fromIterator(Stream.scala:469)
+	at scala.collection.immutable.Stream$.from(Stream.scala:457)
+	at scala.collection.immutable.Stream$.from(Stream.scala:357)
+	at scala.collection.IterableFactory$ToFactory.fromSpecific(Factory.scala:274)
+	at scala.collection.IterableOnceOps.to(IterableOnce.scala:1437)
+	at scala.collection.IterableOnceOps.to$(IterableOnce.scala:1437)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1306)
+	at scala.collection.IterableOnceOps.toStream(IterableOnce.scala:1482)
+	at scala.collection.IterableOnceOps.toStream$(IterableOnce.scala:1482)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1306)
+	at scala.meta.internal.metals.scalacli.ScalaCli$.findInPath$1(ScalaCli.scala:353)
+	at scala.meta.internal.metals.scalacli.ScalaCli$.$anonfun$localScalaCli$10(ScalaCli.scala:389)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.scalacli.ScalaCli$.localScalaCli(ScalaCli.scala:391)
+	at scala.meta.internal.metals.scalacli.ScalaCliServers.localScalaCli$lzycompute(ScalaCliServers.scala:63)
+	at scala.meta.internal.metals.scalacli.ScalaCliServers.localScalaCli(ScalaCliServers.scala:62)
+	at scala.meta.internal.metals.scalacli.ScalaCliServers.cliCommand$lzycompute(ScalaCliServers.scala:90)
+	at scala.meta.internal.metals.scalacli.ScalaCliServers.cliCommand(ScalaCliServers.scala:89)
+	at scala.meta.internal.metals.scalacli.ScalaCliServers.start(ScalaCliServers.scala:173)
+	at scala.meta.internal.metals.ProjectMetalsLspService.doImportScalaCli$1(ProjectMetalsLspService.scala:695)
+	at scala.meta.internal.metals.ProjectMetalsLspService.$anonfun$maybeImportScript$7(ProjectMetalsLspService.scala:765)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2025.03.21 12:06:30 WARN  Could not find semantic tokens for: file:///C:/HTWG_Module/Software%20engeneering/test.sc
+2025.03.21 12:06:30 INFO  time: code lens generation in 1.36s
+2025.03.21 12:06:30 INFO  time: code lens generation in 1.38s
+2025.03.21 12:06:30 INFO  time: code lens generation in 1.36s
+2025.03.21 12:06:41 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:41 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:41 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:43 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:43 WARN  Could not find semantic tokens for: file:///C:/HTWG_Module/Software%20engeneering/test.sc
+2025.03.21 12:06:45 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:45 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:45 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:45 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+März 21, 2025 12:06:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 21
+2025.03.21 12:06:45 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:47 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:47 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:47 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:47 WARN  Could not find semantic tokens for: file:///C:/HTWG_Module/Software%20engeneering/test.sc
+2025.03.21 12:06:47 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:47 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:47 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:48 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:48 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:49 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:49 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:51 WARN  no build target for: C:\HTWG_Module\Software engeneering\test.sc
+2025.03.21 12:06:51 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:06:51 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:08:05 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:08:05 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:08:07 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:09:00 INFO  Shutting down server
+2025.03.21 12:09:00 INFO  shutting down Metals
+2025.03.21 12:09:00 INFO  Exiting server
+2025.03.21 12:09:15 INFO  Started: Metals version 1.5.1 in folders 'C:\HTWG_Module\Software engeneering' for client Visual Studio Code 1.98.2.
+2025.03.21 12:09:16 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:09:17 INFO  no build target found for C:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.21 12:09:17 ERROR Unexpected error initializing server: 
+java.nio.file.InvalidPathException: Illegal char <"> at index 61: C:\Users\tiemo\AppData\Local\Programs\Python\Python39\Scripts"
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.nio.file.Path.of(Path.java:147)
+	at java.nio.file.Paths.get(Paths.java:69)
+	at scala.meta.internal.metals.scalacli.ScalaCli$.$anonfun$localScalaCli$4(ScalaCli.scala:350)
+	at scala.collection.Iterator$$anon$9.next(Iterator.scala:584)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:478)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:600)
+	at scala.collection.immutable.Stream$.fromIterator(Stream.scala:469)
+	at scala.collection.immutable.Stream$.from(Stream.scala:457)
+	at scala.collection.immutable.Stream$.from(Stream.scala:357)
+	at scala.collection.IterableFactory$ToFactory.fromSpecific(Factory.scala:274)
+	at scala.collection.IterableOnceOps.to(IterableOnce.scala:1437)
+	at scala.collection.IterableOnceOps.to$(IterableOnce.scala:1437)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1306)
+	at scala.collection.IterableOnceOps.toStream(IterableOnce.scala:1482)
+	at scala.collection.IterableOnceOps.toStream$(IterableOnce.scala:1482)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1306)
+	at scala.meta.internal.metals.scalacli.ScalaCli$.findInPath$1(ScalaCli.scala:353)
+	at scala.meta.internal.metals.scalacli.ScalaCli$.$anonfun$localScalaCli$10(ScalaCli.scala:389)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.scalacli.ScalaCli$.localScalaCli(ScalaCli.scala:391)
+	at scala.meta.internal.metals.scalacli.ScalaCliServers.localScalaCli$lzycompute(ScalaCliServers.scala:63)
+	at scala.meta.internal.metals.scalacli.ScalaCliServers.localScalaCli(ScalaCliServers.scala:62)
+	at scala.meta.internal.metals.scalacli.ScalaCliServers.setupIDE(ScalaCliServers.scala:68)
+	at scala.meta.internal.metals.ProjectMetalsLspService.maybeSetupScalaCli(ProjectMetalsLspService.scala:255)
+	at scala.meta.internal.metals.ProjectMetalsLspService.$anonfun$onInitialized$1(ProjectMetalsLspService.scala:262)
+	at scala.meta.internal.metals.ConnectionProvider.withWillGenerateBspConfig(ConnectionProvider.scala:74)
+	at scala.meta.internal.metals.ProjectMetalsLspService.onInitialized(ProjectMetalsLspService.scala:262)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$initialized$1(MetalsLspService.scala:677)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+März 21, 2025 12:09:18 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 21, 2025 12:09:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+2025.03.21 12:09:20 INFO  no build target found for c:\HTWG_Module\Software engeneering\test.sc. Using presentation compiler with project's scala-library version: 3.3.4
+März 21, 2025 12:09:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 21, 2025 12:09:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 21, 2025 12:09:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 21, 2025 12:10:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 21, 2025 12:11:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 21, 2025 12:12:00 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+2025.03.21 12:12:49 INFO  
+2025.03.21 12:12:49 INFO  Template applied in C:\HTWG_Module\Software engeneering\.\testscala
+2025.03.21 12:12:49 INFO  
+2025.03.21 12:12:49 INFO  time: ran 'giter8.Giter8' in 7.14s
+2025.03.21 12:13:00 INFO  Shutting down server
+2025.03.21 12:13:00 INFO  shutting down Metals
+2025.03.21 12:13:00 INFO  Exiting server
+2025.03.26 15:28:03 INFO  Started: Metals version 1.5.1 in folders 'C:\HTWG_Module\Software engeneering' for client Visual Studio Code 1.98.2.
+2025.03.26 15:28:04 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\newTest.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:28:07 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\newTest.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:28:07 INFO  Attempting to connect to the build server...
+2025.03.26 15:28:07 INFO  No running Bloop server found, starting one.
+2025.03.26 15:28:10 INFO  Starting compilation server
+2025.03.26 15:28:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\HTWG_Module\Software engeneering\.metals\bsp.trace.json or C:\Users\tiemo\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.03.26 15:28:14 INFO  time: Connected to build server in 7.2s
+2025.03.26 15:28:14 INFO  Connected to Build server: Bloop v2.0.8
+März 26, 2025 3:28:14 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SCHWERWIEGEND: Empty build targets. Expected at least one build target identifier. (full report at: C:\HTWG_Module\Software engeneering\.metals\.reports\bloop\2025-03-26\r_Empty build targets...._15-28-14-928.md)
+März 26, 2025 3:28:14 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SCHWERWIEGEND: Empty build targets. Expected at least one build target identifier. (full report at: C:\HTWG_Module\Software engeneering\.metals\.reports\bloop\2025-03-26\r_Empty build targets...._15-28-14-928.md)
+März 26, 2025 3:28:15 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SCHWERWIEGEND: Empty build targets. Expected at least one build target identifier. (full report at: C:\HTWG_Module\Software engeneering\.metals\.reports\bloop\2025-03-26\r_Empty build targets...._15-28-14-928.md)
+März 26, 2025 3:28:15 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SCHWERWIEGEND: Empty build targets. Expected at least one build target identifier. (full report at: C:\HTWG_Module\Software engeneering\.metals\.reports\bloop\2025-03-26\r_Empty build targets...._15-28-14-928.md)
+März 26, 2025 3:28:15 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SCHWERWIEGEND: Empty build targets. Expected at least one build target identifier. (full report at: C:\HTWG_Module\Software engeneering\.metals\.reports\bloop\2025-03-26\r_Empty build targets...._15-28-14-928.md)
+2025.03.26 15:28:15 INFO  time: Imported build in 0.21s
+2025.03.26 15:28:15 INFO  running doctor check
+2025.03.26 15:28:15 INFO  java targets: 
+2025.03.26 15:28:16 INFO  time: evaluated worksheet 'newTest.worksheet.sc' in 9.44s
+2025.03.26 15:28:18 INFO  time: indexed workspace in 3.99s
+2025.03.26 15:28:19 WARN  no build target for: C:\HTWG_Module\Software engeneering\testscala\src\main\scala\newTest.worksheet.sc
+2025.03.26 15:28:19 INFO  time: evaluated worksheet 'newTest.worksheet.sc' in 0.9s
+2025.03.26 15:28:20 WARN  no build target for: C:\HTWG_Module\Software engeneering\testscala\src\main\scala\newTest.worksheet.sc
+2025.03.26 15:28:20 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\newTest.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:28:20 INFO  time: evaluated worksheet 'newTest.worksheet.sc' in 0.98s
+2025.03.26 15:28:21 INFO  time: code lens generation in 1.04s
+2025.03.26 15:28:21 INFO  time: code lens generation in 1.04s
+März 26, 2025 3:28:45 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:32:29 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:32:32 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:32:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:33:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:35:22 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:35:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:35:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:35:32 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+2025.03.26 15:35:34 INFO  time: code lens generation in 1.14s
+März 26, 2025 3:35:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at scala.meta.internal.tokenizers.LegacyScanner.initialize(LegacyScanner.scala:157)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:19)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:15)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:15)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$1.apply(ScalametaTokenizer.scala:299)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:22)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:13)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionStringDocMeta.safeTokenize(ScalametaCommonEnrichments.scala:260)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:164)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:505)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.worksheets.WorksheetProvider.toInlayHints(WorksheetProvider.scala:219)
+	at scala.meta.internal.worksheets.WorksheetProvider.$anonfun$inlayHints$1(WorksheetProvider.scala:193)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+März 26, 2025 3:35:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at scala.meta.internal.tokenizers.LegacyScanner.initialize(LegacyScanner.scala:157)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:19)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:15)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:15)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$1.apply(ScalametaTokenizer.scala:299)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:22)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:13)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionStringDocMeta.safeTokenize(ScalametaCommonEnrichments.scala:260)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:164)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:505)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.worksheets.WorksheetProvider.toInlayHints(WorksheetProvider.scala:219)
+	at scala.meta.internal.worksheets.WorksheetProvider.$anonfun$inlayHints$1(WorksheetProvider.scala:193)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+März 26, 2025 3:35:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: Index 1 out of bounds for length 1
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at scala.meta.internal.tokenizers.LegacyScanner.initialize(LegacyScanner.scala:157)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:19)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:15)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:15)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$1.apply(ScalametaTokenizer.scala:299)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:22)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:13)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionStringDocMeta.safeTokenize(ScalametaCommonEnrichments.scala:260)
+	at scala.meta.internal.metals.codeactions.StringActions.$anonfun$contribute$1(StringActions.scala:34)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.StringActions.contribute(StringActions.scala:33)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:72)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:70)
+	at scala.collection.immutable.List.collect(List.scala:276)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider.codeActions(CodeActionProvider.scala:70)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeAction$1(MetalsLspService.scala:1180)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.codeAction(MetalsLspService.scala:1179)
+	at scala.meta.internal.metals.WorkspaceLspService.codeAction(WorkspaceLspService.scala:536)
+	at scala.meta.metals.lsp.DelegatingScalaService.codeAction(DelegatingScalaService.scala:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+März 26, 2025 3:35:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 136
+März 26, 2025 3:35:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 135
+März 26, 2025 3:35:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 159
+März 26, 2025 3:35:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 177
+März 26, 2025 3:36:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:36:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:36:45 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:36:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+2025.03.26 15:37:29 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:37:29 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:37:29 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:37:29 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:37:31 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:37:31 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:37:40 WARN  no build target for: C:\HTWG_Module\Software engeneering\testscala\src\main\scala\newTest.worksheet.sc
+2025.03.26 15:37:40 INFO  time: evaluated worksheet 'newTest.worksheet.sc' in 0.57s
+März 26, 2025 3:37:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:37:45 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+2025.03.26 15:37:46 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:37:46 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:38:28 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:38:28 INFO  no build target found for C:\HTWG_Module\Software engeneering\testscala\src\main\scala\worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.26 15:38:28 WARN  Could not find semantic tokens for: file:///C:/HTWG_Module/Software%20engeneering/testscala/src/main/scala/worksheet.sc
+2025.03.26 15:38:30 INFO  Running List(C:\Users\tiemo\AppData\Local\Coursier\data\bin\scala-cli.BAT, bsp, C:\HTWG_Module\Software engeneering\testscala\src\main\scala)
+2025.03.26 15:38:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\HTWG_Module\Software engeneering\testscala\src\main\scala\.metals\bsp.trace.json or C:\Users\tiemo\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.03.26 15:38:33 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/sourcegraph/semanticdb-javac/0.10.0/semanticdb-javac-0.10.0.pom
+2025.03.26 15:38:33 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/sourcegraph/semanticdb-javac/0.10.0/semanticdb-javac-0.10.0.pom
+2025.03.26 15:38:33 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/sourcegraph/semanticdb-javac/0.10.0/semanticdb-javac-0.10.0.jar
+2025.03.26 15:38:34 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/sourcegraph/semanticdb-javac/0.10.0/semanticdb-javac-0.10.0.jar
+2025.03.26 15:38:35 INFO  Connected to Scala CLI server v1.7.1
+2025.03.26 15:38:36 INFO  compiling scala_d5c0a6989e (2 scala sources)
+März 26, 2025 3:38:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 463
+März 26, 2025 3:38:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 461
+März 26, 2025 3:38:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 466
+März 26, 2025 3:38:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 468
+März 26, 2025 3:38:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 467
+März 26, 2025 3:38:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 472
+2025.03.26 15:38:40 INFO  time: indexed workspace in 4.83s
+2025.03.26 15:38:42 INFO  time: compiled scala_d5c0a6989e in 6.02s
+2025.03.26 15:38:42 INFO  Scala CLI started for C:\HTWG_Module\Software engeneering\testscala\src\main\scala
+März 26, 2025 3:38:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:39:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:39:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:40:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:41:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 799
+März 26, 2025 3:42:33 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:42:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:44:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:45:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:46:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 1090
+März 26, 2025 3:46:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:47:35 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:47:36 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:47:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:47:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:47:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:47:43 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:49:10 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+2025.03.26 15:50:49 INFO  compiling scala_d5c0a6989e (1 scala source)
+2025.03.26 15:50:50 INFO  time: compiled scala_d5c0a6989e in 1.29s
+März 26, 2025 3:50:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:51:00 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:51:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 1355
+März 26, 2025 3:51:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 1398
+März 26, 2025 3:51:35 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:51:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:52:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:52:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:53:04 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:53:12 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+2025.03.26 15:54:06 INFO  compiling scala_d5c0a6989e (1 scala source)
+2025.03.26 15:54:06 INFO  time: compiled scala_d5c0a6989e in 0.97s
+März 26, 2025 3:54:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:54:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:58:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:58:32 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:58:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:58:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:58:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 3:58:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:00:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:14:34 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:44:07 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:44:08 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:44:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:45:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:45:27 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:45:28 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:45:29 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:45:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:45:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:46:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:46:49 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:46:49 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:47:08 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:47:22 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:47:33 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:47:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:48:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:48:05 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:48:06 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
+März 26, 2025 4:48:08 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNUNG: Unsupported notification method: metals/windowStateDidChange
