@@ -2,7 +2,7 @@
 
 final class worksheet$_ {
 def args = worksheet_sc.args$
-def scriptPath = """worksheet.sc"""
+def scriptPath = """c:\HTWG_Module\Software engeneering\testscala\src\main\scala\worksheet.sc"""
 /*<script>*/
 // Create Minefield with a 2D array
 val row = 9

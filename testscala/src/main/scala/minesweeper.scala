@@ -1,16 +1,23 @@
 import scala.util.Random
-import scala.io.StdIn
+import scala.io.StdIn // user imput
 
 object Minesweeper {
   val size = 9
-  val mineCount = 10
-  val board: Array[Array[Char]] = Array.fill(size, size)('_')
-  val mineField: Array[Array[Boolean]] = Array.fill(size, size)(false)
+  val mineCount = 10  // Anzahl mines
+  val board: Array[Array[Char]] = Array.fill(size, size)('_') // fill with '_'
+  val mineField: Array[Array[Boolean]] = Array.fill(size, size)(false) 
   val flagField: Array[Array[Boolean]] = Array.fill(size, size)(false)
+  val visited: Array[Array[Boolean]] = Array.fill(size, size)(false)
+  val directions = List((-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1))
 
   def main(args: Array[String]): Unit = {
     placeMines()
+    print("\n"+
+        "Wähle eine Koodinate aus mit dem Format Buchstabe Zahel zB: 'C3' \n" +
+        "Wenn du einen Flag setzen willst, dann tippe ein 'F' vor der Koodinate zB: 'F C3' \n" +
+        " \n")
     playGame()
+    
   }
 
   def placeMines(): Unit = {
@@ -18,75 +25,137 @@ object Minesweeper {
     while (placedMines < mineCount) {
       val row = Random.nextInt(size)
       val col = Random.nextInt(size)
-      if (!mineField(row)(col)) {
+      if (!mineField(row)(col)) {  // solange false, setze mine true
         mineField(row)(col) = true
         placedMines += 1
       }
     }
   }
 
+  // Unit = void
   def playGame(): Unit = {
     var gameOver = false
     while (!gameOver) {
       printBoard()
-      print("Enter your move (F to flag, e.g., 'F C3' or 'C3'): ")
       val input = StdIn.readLine().trim.toUpperCase
       val isFlag = input.startsWith("F ")
-      val move = if (isFlag) input.substring(2) else input
+      val move =  if (isFlag) input.substring(2)else input
+
+                /*} else if(quit) {
+                    gameOver = true 
+                } else if(restart) { // reset game
+                    for (r <- 0 until size; c <- 0 until size) {
+                      board(r)(c) = '_'
+                      mineField(r)(c) = false
+                      flagField(r)(c) = false
+                      visited(r)(c) = false
+                  }*/
+                
+              
+
       if (move.matches("[A-I][1-9]")) {
-        val row = move.charAt(0) - 'A'
+        // Indizes für Zeile und Spalte. Zeile geht von 0-8 und Spalte von 0-8
+        // zB 'C3': '3' hat ACII 3 und 'C' hat ASCII 67, A hat ASCII 65. 
+        // 67-65 = 2 -> Zeile am Index 2
+        // 3-1 = 2 -> Spalte am Index 2
+        val row = move.charAt(0) - 'A' 
         val col = move.charAt(1) - '1'
+
         if (isFlag) {
-          flagField(row)(col) = !flagField(row)(col)
-        } else {
+            flagField(row)(col) = !flagField(row)(col) // toggle flag true/false
+        } else if (flagField(row)(col)) {
+            println("Du kannst keine Zelle anzeigen wenn ein Flag drauf ist\n" +
+            "Entferne zuerst den Flag indem du ein 'F ' vor der Koordinate setzt.\n")
+        } else if (board(row)(col) != '_') {
+          println("This cell has already been revealed.")
+        } /*else if (mineField(row)(col) && flagField(row)(col)) {
+          println("You can't place a flag on a mine.")
+        }*/
+        else {
           if (mineField(row)(col)) {
-            println("BOOOM! You lose.")
             gameOver = true
+            println("     _.-^^---....,,--\n"+      
+                    " _--                  --_\n"+  
+                    "<                        >)\n"+
+                    "|                         |\n"+ 
+                    " \\._                   _./\n"+  
+                    "    ```--. . , ; .--'''\n"+       
+                    "          | |   |\n"+             
+                    "       .-=||  | |=-.\n"+   
+                    "       `-=#$%&%$#=-'\n"+   
+                    "          | ;  :|\n"+     
+                    " _____.,-#%&$@%#&#~,._____\n"+
+            "\n"+"BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM! You lose."+ 
+            "\n")
           } else {
             board(row)(col) = getMineCount(row, col)
             if (checkWin()) {
-              println("You win!")
               gameOver = true
+              println("\n"+
+                      "▄██   ▄    ▄██████▄  ███    █▄        ▄█     █▄   ▄█ ███▄▄▄▄\n"+   
+                      "███   ██▄ ███    ███ ███    ███      ███     ███ ███ ███▀▀▀██▄\n"+ 
+                      "███▄▄▄███ ███    ███ ███    ███      ███     ███ ███ ███   ███\n"+ 
+                      "▀▀▀▀▀▀███ ███    ███ ███    ███      ███     ███ ███ ███   ███\n"+ 
+                      "▄██   ███ ███    ███ ███    ███      ███     ███ ███ ███   ███\n"+ 
+                      "███   ███ ███    ███ ███    ███      ███     ███ ███ ███   ███\n"+ 
+                      "███   ███ ███    ███ ███    ███      ███ ▄█▄ ███ ███ ███   ███\n"+ 
+                      " ▀█████▀   ▀██████▀  ████████▀        ▀███▀███▀  █▀   ▀█   █▀\n" )
             }
           }
         }
       } else {
-        println("Invalid input. Use format like 'C3' or 'F C3'.")
+          if (move.matches("Q")){
+            gameOver = true
+            println("Das Spiel wurde beendet.")
+          }else if(move.matches("R")){
+            for (r <- 0 until size; c <- 0 until size) {
+              board(r)(c) = '_'
+              mineField(r)(c) = false
+              flagField(r)(c) = false
+              visited(r)(c) = false
+            }
+            placeMines()
+            println("Das Spiel wurde zurückgesetzt.")
+          }else{
+            println("Invalider Input.\n" +
+            "Wähle eine Koodinate aus mit dem Format Buchstabe Zahel zB: 'C3' \n" +
+            "Wenn du einen Flag setzen willst, dann tippe ein 'F' vor der Koodinate zB: 'F C3' \n" )
+          }
       }
     }
     printBoard(reveal = true)
   }
 
-    val visited: Array[Array[Boolean]] = Array.fill(size, size)(false)
+  
 
-    def getMineCount(row: Int, col: Int): Char = {
-        val directions = List((-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1))
-        val count = directions.count { case (dr, dc) =>
-        val nr = row + dr
-        val nc = col + dc
-        nr >= 0 && nr < size && nc >= 0 && nc < size && mineField(nr)(nc)
-        }
-        if (count == 0) {
-            revealAdjacent(row, col) // reveal adjacent cells if no mines around
-            '#'
-        } else {
-            (count + '0').toChar
-        }
+  def getMineCount(row: Int, col: Int): Char = {
+      
+      val count = directions.count { case (dr, dc) =>
+      val nr = row + dr
+      val nc = col + dc
+      nr >= 0 && nr < size && nc >= 0 && nc < size && mineField(nr)(nc)
+      }
+      if (count == 0) {
+        revealAdjacent(row, col) // reveal adjacent cells if no mines around
+        '0' // no neighboring mines
+      } else {
+        (count + '0').toChar
+      }
     }
 // if # is next to # then reveal all adjacent cells
-    def revealAdjacent(row: Int, col: Int): Unit = {
-        if (visited(row)(col)) return
-        visited(row)(col) = true
+  def revealAdjacent(row: Int, col: Int): Unit = {
+    if (visited(row)(col)) return
+    visited(row)(col) = true
 
-        val directions = List((-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1))
-        for ((dr, dc) <- directions) {
-            val nr = row + dr
-            val nc = col + dc
-            if (nr >= 0 && nr < size && nc >= 0 && nc < size && board(nr)(nc) == '_') {
-                board(nr)(nc) = getMineCount(nr, nc)
-                if (board(nr)(nc) == '#') revealAdjacent(nr, nc)
-            }
+   
+    for ((dr, dc) <- directions) {
+        val nr = row + dr
+        val nc = col + dc
+        if (nr >= 0 && nr < size && nc >= 0 && nc < size && board(nr)(nc) == '_') {
+          board(nr)(nc) = getMineCount(nr, nc)
+          if (board(nr)(nc) == '#') revealAdjacent(nr, nc)
         }
+    }
   }
   def checkWin(): Boolean = {
     var flaggedMines = 0
@@ -105,8 +174,8 @@ object Minesweeper {
     for (r <- 0 until size) {
       print((r + 'A').toChar + " ")
       for (c <- 0 until size) {
-        if (reveal && mineField(r)(c)) print("* ") // mine emoji
-        else if (flagField(r)(c)) print("P ") // flag emoji
+        if (reveal && mineField(r)(c)) print(164.toChar + " ") // mine emoji
+        else if (flagField(r)(c)) print(182.toChar + " ") // flag emoji
         else print(s"${board(r)(c)} ")
       }
       println()
